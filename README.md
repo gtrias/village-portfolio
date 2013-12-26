@@ -1,4 +1,4 @@
-village-portfolio
+Village Portfolio
 =================
 
-Theme Village Portfolio Plugin
+A Portfolio plugin for Theme Village Themes
