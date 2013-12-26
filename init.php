@@ -27,7 +27,7 @@ if (is_admin()) { // note the use of is_admin() to double check that this is hap
 	    require_once( "updater.php" );
 
 	    $config = array(
-	        'slug' => plugin_basename(__FILE__), // this is the slug of your plugin
+	        'slug' => 'village-portfolio', 
 	        'proper_folder_name' => 'village-portfolio', // this is the name of the folder your plugin lives in
 	        'api_url' => 'https://api.github.com/repos/justnorris/village-portfolio', // the github API url of your github repo
 	        'raw_url' => 'https://raw.github.com/justnorris/village-portfolio/master', // the github raw url of your github repo
