@@ -3,7 +3,7 @@
 Plugin Name: Village Portfolio
 Plugin URI: http://www.themevillage.net/village-portfolio
 Description: A plugin that enables your portfolio in ThemeVillage Themes.
-Version: 1.2.1
+Version: 1.3.0
 Author: ThemeVillage
 Author URI: http://www.themevillage.net
 License: GPL2+
