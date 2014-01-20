@@ -3,7 +3,7 @@
 Plugin Name: Village Portfolio
 Plugin URI: http://www.themevillage.net/village-portfolio
 Description: A plugin that enables your portfolio in ThemeVillage Themes.
-Version: 1.2.0
+Version: 1.2.1
 Author: ThemeVillage
 Author URI: http://www.themevillage.net
 License: GPL2+
@@ -21,10 +21,12 @@ $portfolio = new Village_Portfolio;
 
 
 if (is_admin()) { // note the use of is_admin() to double check that this is happening in the admin
-	global $pagenow;
 
-	// if ( $pagenow == "plugins.php" ) {
-	    require_once( "updater.php" );
+	    if ( ! class_exists( 'WPGitHubUpdater' ) && ! class_exists( 'WP_GitHub_Updater' ) && ! class_exists('wp_github_updater')  ) {
+		    require_once( "updater.php" );	
+	    }
+
+	    
 
 	    $config = array(
 	        'slug' => plugin_basename( __FILE__ ), 
