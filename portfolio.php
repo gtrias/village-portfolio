@@ -296,7 +296,7 @@ class Village_Portfolio {
 			$post_id = get_the_ID();
 		}
 
-		$images = get_post_meta($post_id, self::$portfolio_key, false);
+		$images = get_post_meta($post_id, 'village_gallery', false);
 		return (array) $images;
 
 	}
@@ -328,7 +328,7 @@ class Village_Portfolio {
 		$results = array();
 
 		if ( !empty( $image_ids ) ) {
-			foreach ($image_ids as $image_ID) {
+			foreach ($image_ids[0] as $image_ID) {
 				$results[] = self::get_image_sizes($image_ID, $sizes);
 			}
 		}
